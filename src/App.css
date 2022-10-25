@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.container-1{
+  background-color: #F8EDE3;
+  height: 100%;
+}
+.loader-background{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.874);
+}
+.img{
+  animation: spin-anim 3s linear infinite;
+}
+.name{
+  color: aliceblue;
+  animation: spin-anim-text 3s linear infinite;
+}
+.animationHR{
+  border-radius: 100px 0 100px 0 ;
+  background-color: rgb(118, 118, 196);
+  width: 40vw;
+  height: 1vh;
+}
+@keyframes spin-anim {
+  0% {
+      transform: scaleX(0);
+  }
+  100% {
+      transform: scaleX(1);
+  }
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.flex-col .cube{
+  animation: shrink 1s infinite ease-in-out;
+}
+.flex-col .cube1{animation-delay: 0.2s;}
+.flex-col .cube2{animation-delay: 0.3s;}
+.flex-col .cube3{animation-delay: 0.4s;}
+.flex-col .cube4{animation-delay: 0.1s;}
+.flex-col .cube5{animation-delay: 0.2s;}
+.flex-col .cube6{animation-delay: 0.3s;}
+.flex-col .cube7{animation-delay: 0.0s;}
+.flex-col .cube8{animation-delay: 0.1s;}
+.flex-col .cube9{animation-delay: 0.2s;}
+@keyframes shrink {
+  0%,70%,100%{
+    transform: scale3d(1,1,1);
+  }
+  35%{
+    transform: scale3d(0,0,1);
+  }
+}
+.load-head{
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.836);
+  font-family: 'Kanit', sans-serif;
+}

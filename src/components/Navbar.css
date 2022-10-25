@@ -1,0 +1,176 @@
+.menu{
+    background-color: #372948;
+    height: 100vh;
+}
+.heading{
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Yeseva One', cursive;
+    color: white;
+    font-weight: bold;
+}
+.nav{
+    transition: 1s cubic-bezier(0,.89,.41,1);;
+    text-decoration: none;
+    color: rgb(171, 157, 157);
+}
+.nav:hover{
+    color: white;
+    text-decoration: underline;
+}
+.nav2{
+    transition: 1s cubic-bezier(0,.89,.41,1);;
+    text-decoration: none;
+    color: White;
+}
+.nav2:hover{
+    color: white;
+}
+.nav_head{
+    padding: 25px;
+    padding-bottom: 15px;
+}
+.nav_head p{
+    font-size: 1.3rem;
+    font-family: 'Kanit', sans-serif;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    border: 0;
+    background-color: #fb3e6a;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 2%;
+    width: 13%;
+    transition: 0.8s cubic-bezier(0,.89,.41,1);;
+}
+.buttons button:hover{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+/* Navbar */
+.nav-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2%;
+}
+.logo{
+    width: 60px;
+}
+.nav-head p{
+    font-family: 'Kanit', sans-serif;
+}
+.nav-head2{
+    font-size: 2rem;
+    font-family: 'Yeseva One', cursive;
+    color: black;
+}
+.navbut{
+    background-color: #F8EDE3;
+    border: 0;
+    padding: 0.4;
+    position: relative;
+    left: 3%;
+    padding-top: 0;
+    font-size: 2rem;
+}
+.nav3{
+    transition: 1s cubic-bezier(0,.89,.41,1);;
+    text-decoration: none;
+    color: rgb(108, 105, 105);
+}
+.nav3:hover{
+    color: black;
+    text-decoration: underline;
+}
+.menu_sty{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-col .cube{
+    animation: shrink 1s infinite ease-in-out;
+  }
+  .flex-col .cube1{animation-delay: 0.2s;}
+  .flex-col .cube2{animation-delay: 0.3s;}
+  .flex-col .cube3{animation-delay: 0.4s;}
+  .flex-col .cube4{animation-delay: 0.1s;}
+  .flex-col .cube5{animation-delay: 0.2s;}
+  .flex-col .cube6{animation-delay: 0.3s;}
+  .flex-col .cube7{animation-delay: 0.0s;}
+  .flex-col .cube8{animation-delay: 0.1s;}
+  .flex-col .cube9{animation-delay: 0.2s;}
+  @keyframes shrink {
+    0%,70%,100%{
+      transform: scale3d(1,1,1);
+    }
+    35%{
+      transform: scale3d(0,0,1);
+    }
+  }
+  .load-head{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.836);
+    font-family: 'Kanit', sans-serif;
+  }
+  .clear{
+    font-size: 40;
+  }
+
+@media only screen and (max-width: 600px){
+    .nav-head2{
+        font-size: 1.5rem;
+        font-family: 'Yeseva One', cursive;
+        color: black;
+    }
+    .nav_head p{
+        font-size: 1rem;
+        font-family: 'Kanit', sans-serif;
+    }
+    .clear{
+        font-size: 30;
+    }
+    .logo{
+        width: 40px;
+    }
+    .nav{
+        align-items: center;
+        justify-content: center;
+    }
+    .nav p{
+        text-align: center;
+    }
+    .nav1{
+        padding-top: 15%;
+    }
+    .buttons{
+        margin-top: 15%;
+        align-items: center;
+        justify-content: left;
+    }
+    .buttons button{
+        width: 40%;
+        border-radius: 5px;
+    }
+}
