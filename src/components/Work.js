@@ -6,6 +6,7 @@ import './Home.css';
 import Links from "./Links";
 import SquareIcon from '@mui/icons-material/Square';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Work = () => {
     const [loading, setLoading] = useState(false);
@@ -74,14 +75,18 @@ const Work = () => {
                     variants={card}
                     >
                         <div class="row g-0 ">
-                            <div class="col-md-4">
-                                {/* <img src="..." class="img-fluid rounded-start" alt="..." /> */}
-                            </div>
                             <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Adding soon</h5>
-                                    <p class="card-text"></p>
+                              <div class="card-body">
+                                <h5 class="card-title">Stock Dashboard</h5>
+                                <p class="card-text">Implemented using restfulAPI and get to know about trending crypto coins and search for about different coins.</p>
+                                <div>
+                                <button className="gitBut">
+                                  <span className="nameGit">Github</span>
+                                  <span className="gitIco"><GitHubIcon sx={{ color: "white" }} /></span>
+                                </button>
                                 </div>
+                                <a href="#" class="card-link">Another link</a>
+                              </div>
                             </div>
                         </div>
                     </motion.div>

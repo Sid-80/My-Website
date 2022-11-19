@@ -226,7 +226,44 @@
     color: rgba(255, 255, 255, 0.836);
     font-family: 'Kanit', sans-serif;
   }
-
+.gitBut{
+    border: 0;
+    padding: 5%;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+.gitIco{
+    opacity: 0;
+    padding-left: 10px;
+}
+.gitBut:hover .gitIco{
+    animation: reveal 1s 0.3s forwards;
+}
+.gitBut:hover .nameGit{
+    color: white;
+}
+.nameGit{
+    visibility: visible;
+    opacity: 1;
+}
+.gitBut:hover{
+    animation: changeSizeBut 1.25s 0.1s forwards;
+    border: 0;
+}
+@keyframes reveal {
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes changeSizeBut {
+    10%,
+    100%{
+        border-radius: 10px;
+        background-color: #FF577F;
+    }
+}
 @media only screen and (min-width:400px) and ( max-width: 900px) {
     .home_head h1{
         font-size: 2.4rem;
