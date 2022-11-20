@@ -251,6 +251,30 @@
     animation: changeSizeBut 1.25s 0.1s forwards;
     border: 0;
 }
+.toWeb{
+    border: 0;
+    padding: 5%;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+.WebIco{
+    opacity: 0;
+    padding-left: 10px;
+}
+.toWeb:hover{
+    animation: changeSizeBut 1.25s 0.1s forwards;
+    border: 0;
+}
+.toWeb:hover .WebIco{
+    animation: reveal 1s 0.3s forwards;
+}
+.toWeb:hover .nameWeb{
+    color: white;
+}
+.card_but button{
+    padding: 20px;
+}
 @keyframes reveal {
     100%{
         opacity: 1;

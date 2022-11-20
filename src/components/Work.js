@@ -7,6 +7,8 @@ import Links from "./Links";
 import SquareIcon from '@mui/icons-material/Square';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { NavLink } from "react-router-dom";
+import WebIcon from '@mui/icons-material/Web';
 
 const Work = () => {
     const [loading, setLoading] = useState(false);
@@ -79,13 +81,20 @@ const Work = () => {
                               <div class="card-body">
                                 <h5 class="card-title">Stock Dashboard</h5>
                                 <p class="card-text">Implemented using restfulAPI and get to know about trending crypto coins and search for about different coins.</p>
-                                <div>
-                                <button className="gitBut">
-                                  <span className="nameGit">Github</span>
-                                  <span className="gitIco"><GitHubIcon sx={{ color: "white" }} /></span>
-                                </button>
+                                <div className="card_but">
+                                <NavLink>
+                                  <button className="gitBut">
+                                    <span className="nameGit">Github</span>
+                                    <span className="gitIco"><GitHubIcon sx={{ color: "white" }} /></span>
+                                  </button>
+                                </NavLink>
+                                <NavLink>
+                                  <button className="toWeb">
+                                    <span className="nameWeb">Website</span>
+                                    <span className="WebIco"><WebIcon sx={{ color: "white" }} /></span>
+                                  </button>
+                                </NavLink>
                                 </div>
-                                <a href="#" class="card-link">Another link</a>
                               </div>
                             </div>
                         </div>
